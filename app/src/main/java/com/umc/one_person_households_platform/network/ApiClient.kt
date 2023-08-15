@@ -10,6 +10,14 @@ import retrofit2.http.*
 
 interface ApiClient {
 
+    //회원가입
+    @Headers("Content-Type: application/json")
+    @POST("/app/users")
+    fun signup(
+        @Body request: Signup
+        ): Call<Signup>
+
+
     // 공동 구매 리스트 출력
     @Headers("X-ACCESS-TOKEN: ${BuildConfig.JWT_KEY}")
     @GET("/app/boards/community")

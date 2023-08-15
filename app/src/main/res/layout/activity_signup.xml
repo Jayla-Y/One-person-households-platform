@@ -120,6 +120,20 @@
                     app:layout_constraintTop_toBottomOf="@id/tv_password" />
 
                 <TextView
+                    android:id="@+id/tv_password_validation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F63434"
+                app:layout_constraintTop_toBottomOf="@id/et_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                />
+
+
+                <TextView
                     android:id="@+id/tv_passwordagain"
                     android:layout_width="104dp"
                     android:layout_height="18dp"
